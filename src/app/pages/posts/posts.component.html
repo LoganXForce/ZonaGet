@@ -1,0 +1,13 @@
+
+  
+    <ul class="list-group">  
+    
+        <app-post *ngFor="let mensaje of mensajes | async" [mensaje]="mensaje"
+        (clickPost)="escuchaClick( $event )"
+        ></app-post>
+           <!-- <h2>{{ mensaje.name }}</h2>
+            <img src="{{mensaje.img}}" alt="">
+            <p>
+                {{ mensaje.level }}
+            </p> -->
+    </ul>
